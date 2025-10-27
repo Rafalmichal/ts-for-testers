@@ -49,3 +49,23 @@ console.log(firstName.padStart(firstName.length + 5, '*').padEnd(firstName.lengt
 const titleFromWebsite = '   Learn TypeScript !  ';
 console.log(titleFromWebsite);
 console.log(titleFromWebsite.trim());
+
+//sprawdzanie zawartości stringa
+const email = 'email@test.eu';
+console.log(email.includes('@'));
+console.log(email.startsWith('email'));
+console.log(email.endsWith('com'));
+
+//wyszukiwanie w stringu
+const testText = 'Test Ala testowy  , ala ma kota ale kot ma Ale';
+console.log(testText.search('ala'));
+console.log(testText.search(/ala/i)); //flaga i - ignoruj wielkość liter
+
+//wycinanie części stringa
+//slice
+console.log(testText.slice(5, 8)); //od indeksu 5 do 8 (8 nie jest wliczane)
+
+//dzielenie stringa
+const tags = 'programming, javascript, typescript, webdev';
+const tagsArray = tags.split(', ');
+console.log(tagsArray);
